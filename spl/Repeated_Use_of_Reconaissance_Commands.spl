@@ -1,0 +1,17 @@
+index=* EventCode=1
+
+(Image="*\\whoami.exe"
+
+OR Image="*\\hostname.exe"
+
+OR Image="*\\ipconfig.exe"
+
+OR Image="*\\systeminfo.exe"
+
+OR Image="*\\net.exe")
+
+| bucket _time span=5m
+
+| stats values(Image) as Commands count by User _time
+
+| where count >= 3
