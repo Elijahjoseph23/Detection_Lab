@@ -1,0 +1,7 @@
+index=* EventCode=1
+Image="*\\powershell.exe"
+(CommandLine="*-EncodedCommand*"
+ OR CommandLine="*-enc*"
+ OR CommandLine="*-ExecutionPolicy Bypass*"
+ OR CommandLine="*-WindowStyle Hidden*")
+ | stats values(CommandLine) as Commands count by User _time action
