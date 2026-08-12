@@ -1,51 +1,24 @@
 
 # DETECTION
 
-  
-
 ## Objective
 
-  
-
-
-
-  
-
 ---
-
-  
 
 ## MITRE ATT&CK
 
-  
+- Tactic(s):
 
-- Tactic(s): 
-
-- Technique(s):
-
-	- 
-
-  
+- Technique(s)
+  - 
 
 ---
-
-  
 
 ## Why This Matters
 
-  
-
-
-
-  
-
 ---
 
-  
-
 ## SPL Query
-
-  
 
 ```spl
 
@@ -53,19 +26,11 @@ PUT QUERY HERE
 
 ```
 
-  
-
 ---
-
-  
 
 ## Test Procedure
 
-  
-
 Ran the following commands:
-
-  
 
 1. 
 
@@ -73,23 +38,13 @@ Ran the following commands:
 
 3. 
 
-  
-
 ---
-
-  
 
 ## Sample Output
 
-  
-
-![SUBTEXT](FILE PATH)
-
-  
+![SUBTEXT](../screenshots/FILE HERE)
 
 ---
-
-  
 
 ## Fields Used
 
@@ -103,25 +58,10 @@ Ran the following commands:
 
 ## False Positives
 
-  
-
-
-
-  
-
 ---
-
-  
 
 ## Improvements
 
-  
-
-
-
-
 ---
-
-  
 
 ## References
