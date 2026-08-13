@@ -18,7 +18,7 @@ Detect PowerShell processes that establish network connections.
 
 ## Why This Matters
 
-Threat actors often use PowerShell commands to invoke connections to malicious IP addresses. From this, they can download malicious scripts to take control of the device or deploy ransomware.
+Threat actors often use PowerShell commands to invoke connections to malicious IP addresses. From this, they can download malicious payloads to take control of the device or communicate with attacker controlled infrastructure.
 
 ---
 
@@ -65,6 +65,8 @@ Ran the following commands:
 |------|---------|
 |EventCode | Used to determine if a command is run as well as if a network connection was attempted |
 | Image | Used to specifically search for PowerShell commands |
+| ProcessGuid | Connects the PowerShell command and network connection events together |
+
 
 ---
 
@@ -79,7 +81,7 @@ Simple network troubleshooting by tech support will flag this alert, as well as 
 - Filter out any software where this behavior is expected activity
 - Filter by specific ports often correlated with malicious activity
 - Make it so it only flags for connections to external IP addresses
-- Add IP reputation as part of detections
+- Add destination IP reputation and allow lists as part of detections to reduce false positives and prioritize malicious destinations
 
 ---
 
